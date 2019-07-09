@@ -6,6 +6,8 @@
 
 <div class="container">
   
+  
+  
   <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -27,6 +29,9 @@
     @endforeach
   </tbody>
 </table>
+
+{{ $productos->links() }}
+<a  class="btn btn-info" href="{{ route('productos.create')}}" >Agregar Productos</a>
 </div>
 
 @endsection
